@@ -25,4 +25,4 @@ and verify log output for single result
 2016-03-30 03:52:00.651  INFO 72609 --- [nio-8080-exec-3] com.daggerok.microrest.domain.BookRest   : getting one 1
 ```
 
-which is mean, that on first call value cached, and will not call method again
+which is mean, that on first call result value cached, and method will not call again for same input
