@@ -17,20 +17,20 @@ import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 @RestController
-@CacheConfig(cacheNames = {"books"})
+@CacheConfig(cacheNames = {"books"}) // 2
 public class BookRest {
     @Autowired
     BookRepository repo;
 
     @Cacheable
-    @RequestMapping("/")
+    @RequestMapping("/") // 2
     public Collection<Book> get() {
         log.info("getting all...");
         return repo.findAll();
     }
 
     @Cacheable
-    @RequestMapping("/{id}")
+    @RequestMapping("/{id}") // 2
     public Book get(@PathVariable("id") Long id) {
         log.info("getting one {}", id);
         return repo.findOne(id);

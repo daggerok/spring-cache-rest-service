@@ -38,7 +38,7 @@ dependencies {
             "org.projectlombok:lombok:$lombokVer",
             'org.springframework.boot:spring-boot-starter-web',
             'org.springframework.boot:spring-boot-starter-data-jpa',
-            'org.springframework.boot:spring-boot-starter-cache'
+            'org.springframework.boot:spring-boot-starter-cache' // 1
 
     testCompile 'org.springframework.boot:spring-boot-starter-test'
 }
